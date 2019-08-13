@@ -1,31 +1,14 @@
 package com.yyh.algorithm.sort;
 
-import com.yyh.algorithm.RunMain;
-
 import java.util.Arrays;
 
 /**
  * @author pc-d
  */
-public class Bubble extends RunMain {
-
-    static {
-        name = "冒泡排序";
-        main = new Bubble();
+public class Bubble extends Sort {
+    public static void sort(int[] arr) {
+        sort(arr, true);
     }
-
-
-    @Override
-    public String run() {
-        int[] orgArr = {1, 9, 11, 6, 5, 7, 0, 4, 17, 13, 3, 8, 2, 16, 10};
-        sort(orgArr, true);
-        System.out.println(">>>>>再倒序排列一遍");
-        sort(orgArr, false);
-        System.out.println(">>>>>再正序排列一遍");
-        sort(orgArr, true);
-        return Arrays.toString(orgArr);
-    }
-
 
     /**
      * 冒泡排序
@@ -37,22 +20,28 @@ public class Bubble extends RunMain {
      * </p>
      *
      * @param arr
-     * @param sortAsc true:asc,false:desc
+     * @param sortAsc true:正序,false:倒序
      */
-    public void sort(int[] arr, boolean sortAsc) {
+    public static void sort(int[] arr, boolean sortAsc) {
         for (int i = 1; i < arr.length; i++) {
+            boolean swaped = false;
             for (int j = 0; j < arr.length - i; j++) {
                 if (sortAsc) {
                     if (arr[j] > arr[j + 1]) {
-                        swap(arr, j, j + 1);
+                        swaped = swap(arr, j, j + 1);
                     }
                 } else {
                     if (arr[j] < arr[j + 1]) {
-                        swap(arr, j, j + 1);
+                        swaped = swap(arr, j, j + 1);
+
                     }
                 }
+            }
+            if (!swaped) {//如果没有交换就说明已经排好序了
+                break;
             }
             System.out.println("第" + i + "次排序后:" + Arrays.toString(arr));
         }
     }
+
 }

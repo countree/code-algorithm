@@ -1,17 +1,11 @@
 package com.yyh.algorithm.sort;
 
-import com.yyh.algorithm.RunMain;
-
 /**
  * @author pc-d
  */
-public class Quick extends RunMain {
-    static {
-        main = new Quick();
-    }
+public class Quick extends Sort {
+    public static void sort(int[] arr) {
 
-    @Override
-    public String run() {
-        return "";
     }
 }
+

@@ -7,7 +7,15 @@
     <artifactId>yyh-code</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
     <description>
-        算法联系
+        算法练习
     </description>
 </project>
