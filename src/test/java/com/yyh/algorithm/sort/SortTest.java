@@ -7,8 +7,8 @@ import org.junit.Test;
 import java.util.Arrays;
 
 public class SortTest {
-    int[] arr = {3, 6, 2, 7, 1, 5, 4, 9, 7, 23, 5, 13, 7, 8, 36};
-    int[] orgArr = {3, 6, 2, 7, 1, 4, 5, 7, 9, 23, 5, 13, 7, 8, 36};
+    int[] orgArr = {9, 7, 23, 5, 13, 8, 36, 3, 6, 2, 11, 1, 4};
+    int[] arr = orgArr;
 
     private void name(String name) {
         System.out.println(">>>排序方式：" + name);
@@ -39,5 +39,11 @@ public class SortTest {
     public void selection() {
         name("选择排序");
         Selection.sort(arr);
+    }
+
+    @Test
+    public void insertion() {
+        name("插入排序");
+        Insertion.sort(arr);
     }
 }
