@@ -1,7 +1,5 @@
 package com.yyh.algorithm.sort;
 
-import java.util.Arrays;
-
 /**
  * @author pc-d
  */
@@ -41,7 +39,7 @@ public class Bubble extends Sort {
             if (!swaped) {//如果没有交换就说明已经排好序了
                 break;
             }
-            System.out.println("第" + i + "次排序后:" + Arrays.toString(arr));
+            soutMsg(i, arr);
         }
     }
 

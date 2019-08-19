@@ -1,7 +1,5 @@
 package com.yyh.algorithm.sort;
 
-import java.util.Arrays;
-
 /**
  * 选择排序
  */
@@ -18,7 +16,7 @@ public class Selection extends Sort {
             if (min != i) {
                 swap(arr, i, min);
             }
-            System.out.println("第" + i + "次:" + Arrays.toString(arr));
+            soutMsg(i,arr);
         }
     }
 }

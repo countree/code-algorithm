@@ -9,3 +9,4 @@
 仅增量因子为1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。
 #### 动图演示
 ![img/shell.gif](img/shell.gif)
+![img/shell2.jpg](img/shell2.jpg)

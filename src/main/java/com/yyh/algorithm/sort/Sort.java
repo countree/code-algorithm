@@ -1,8 +1,15 @@
 package com.yyh.algorithm.sort;
 
+import java.util.Arrays;
+
 public class Sort {
+    protected static void soutMsg(int i, int[] arr) {
+        System.out.println("第" + i + "次:" + Arrays.toString(arr));
+    }
+
     /**
      * 交换位置
+     *
      * @param arr
      * @param i
      * @param j

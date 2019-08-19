@@ -1,7 +1,5 @@
 package com.yyh.algorithm.sort;
 
-import java.util.Arrays;
-
 /**
  * @author pc-d
  */
@@ -35,7 +33,7 @@ public class Insertion extends Sort {
             if (minIndex != i) {
                 arr[minIndex] = indexValue;
             }
-            System.out.println("第" + i + "次:" + Arrays.toString(arr));
+            soutMsg(i, arr);
         }
     }
 }
